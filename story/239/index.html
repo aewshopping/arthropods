@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=239>239<br>
+The wake up call<br>
+⏰</h1>
+<div class="text-justify">
+<p>As you wake, for a moment you are confused where you are. You can hear the sound of birds chirping through an open window and there is a faint woody aroma in the air. 
+<p>Then, with a warm glow, you remember. You are in Ravenwing House Tower, and your new home-away-from-home is in the inside of a giant magical tree. As well as having the largest library in the history of the world (past and future), it also has a lovely en-suite bedroom just for you with a cosy living room attached. You sigh happily - the life of a wizard is not bad at all.</p>
+<p>Then you remember that your new best friend Daniel Colliers-Wood also has a bedroom next door, so you throw your clothes on and dash out to find him.</p>
+<p>As you run out of your room into the wooden corridor you see Daniel dashing along the corridor towards you.</p>
+<p>&quot;Arthur this tower is amazing! There's so much to see. Let's explore the Ravenwing tower today and skip our lessons.&quot;</p></p>
+</div>
+<hr>
+<p>1. "I'm not sure Daniel," you say. "I really want to learn some magic spells..." ~ <strong><a href="/story/117" >Go to number 117</a></strong></p>
+<p>2. "Great idea," you reply. "We can always catch up on school work tomorrow!" ~ <strong><a href="/story/119" >Go to number 119</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recrysomwQf8bldIH" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

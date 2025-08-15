@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=282>282<br>
+The dungeon door<br>
+🚪</h1>
+<div class="text-justify">
+<p>You enter the passageway sloping downwards and after many twists and turns in the passageway you are hopelessly lost.
+<p>You notice a little spider running around a corner ahead of you. Curiously it then comes back round the corner, looks at you and waits, then lifts up a spindly leg and points.</p>
+<p>&quot;Arthur&quot; says Aaron, &quot;I think that spider wants us to follow him.&quot;</p>
+<p>With no better idea of where to go you follow the spider as it turns this way then that and are delighted to finally arrive at what must surely be the entrance to the dungeon.</p>
+<p>&quot;Yes, Aaron, we've found it!&quot; you whisper fiercely, giving Aaron an excited whack on the shoulder.</p>
+<p>A huge wooden door, banded with silver inlaid iron, stands within a stone archway. Either side of the door two antique sets of armour are positioned upright as if on guard.</p>
+<p>The spider you were following scurries through the keyhole of the door and disappears. You wonder where he is off to.</p>
+<p>Above the door there is a sign written in some archaic font, which reads: &quot;DUNGEON&quot;.</p>
+<p>You try the doorknob but it doesn't budge.</p>
+<p>&quot;There's a magical enchantment of locking on the door remember!&quot; says Aaron. &quot;We will need to cast a counter spell if we are to get through.&quot;</p>
+<p>As you lift up your wand, you rack your brains to try to think of a spell that might work.</p></p>
+</div>
+<hr>
+<p>1. "Openus Sesamus!" you cry ~ <strong><a href="/story/291" >Go to number 291</a></strong></p>
+<p>2. "Door lock undone, unlock door done!" you say ~ <strong><a href="/story/220" >Go to number 220</a></strong></p>
+<p>3. "Ziggidy zaggady zock unlock!" you chant ~ <strong><a href="/story/258" >Go to number 258</a></strong></p>
+<p>4. "Watermelon!" you shout ~ <strong><a href="/story/251" >Go to number 251</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recGzh0WfOPAuG7SU" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

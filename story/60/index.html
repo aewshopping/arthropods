@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=60>60<br>
+The sorting song<br>
+🎤</h1>
+<div class="text-justify">
+<p>A warbling tune floats into the hall from the hole: 
+<p>&quot;<em>First years, first years, what will you do?<br>
+Which House do you like and which House likes you?<br>
+I've written this ditty while waiting in my hole<br>
+Listen very closely and figure out your role...</em></p>
+<p><em>Leonard Lionpaw he fights for truth<br>
+With boot and fist, nail and tooth.<br>
+When injustice triumphs it makes him sick<br>
+He'll fight right back with a punch and a kick.</em></p>
+<p><em>Rebecca Ravenwing, her mind's so quick,<br>
+She makes even Albert Einstein look a bit thick.<br>
+When evil lurks she knows just what to do:<br>
+Outwit the wicked witch with her brainbox crew.</em></p>
+<p><em>Helen Hedgehog, she's reliable and calm<br>
+She'll never start trouble or cause you harm.<br>
+With bad magic in the air, she'll act fast:<br>
+She'll hide and curl up until the danger is past.</em></p>
+<p><em>Sylvester Snakefang, seeking world domination<br>
+Power is his thing along with extirpation.<br>
+When darkness comes his eyes light up,<br>
+He'll do anything it takes to make it to the top.</em>&quot;</p>
+<p>The song warbles to a stop and there is smattering of polite applause from the children in the hall.</p>
+<p>&quot;Thank you Percy,&quot; says Slumblebore, directing his voice down into the hole. &quot;Although I must say I thought last year's song was better.&quot;</p>
+<p>Percy? What is this strange singing creature called Percy living in a hole underneath the Great Hall? you ask yourself.</p>
+<p>&quot;First years, please form a queue in front of me!&quot;</p>
+<p>You realise that you are soon going to find out whoever or whatever Percy is. You nervously stand up along with all the other first years. You decide to:</p></p>
+</div>
+<hr>
+<p>1. Go to the front of the queue. Whatever happens you want to be first in line to see! ~ <strong><a href="/story/7" >Go to number 7</a></strong></p>
+<p>2. Lurk around at the back of the queue. Fortune favours the prudent. ~ <strong><a href="/story/13" >Go to number 13</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=rec7VkNl3ZAqF2JGJ" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

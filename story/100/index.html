@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=100>100<br>
+Winning the wager<br>
+🧙‍♀️</h1>
+<div class="text-justify">
+<p>"You are 100 years old," you say confidently to the witch.
+<p>&quot;Yes! How did you know? No one has guessed my age correctly before! I was hoping to turn you into a manikin!&quot;</p>
+<p>&quot;The clue helped,&quot; you say generously.</p>
+<p>&quot;Here is your small robe and wizards hat, now be off with before I change my mind.&quot;</p>
+<p>You gratefully take the clothing and head out of the shop with your Mum.</p>
+<p>The only thing you need now is your wand!</p></p>
+</div>
+<hr>
+<p>1. Head to Wally's Wanderful Wand shop to get your wand ~ <strong><a href="/story/52" >Go to number 52</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recvdTat9e9dE6Xvx" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

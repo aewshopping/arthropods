@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=262>262<br>
+The dungeon door<br>
+🚪</h1>
+<div class="text-justify">
+<p>As the other Snakefang students file off into the corridor on their way to Snakefang House tower, you and Snako quietly sneak away to the side. After two or three turns of the passageway the noise of the other students has faded to nothing.
+<p>&quot;Now where?&quot; asks Snako, a tremor of fear and excitement in his voice.</p>
+<p>You look around trying to get your bearings. You realise that the school is absolutely huge. There must be hundreds of corridors, archways, passageways and staircases. How will you even find the way to the dungeons?</p>
+<p>Just then you notice five spiders walking along the floor, lined up one after the other. What are those disgusting looking creatures up to? you think and start to follow them along the corridor.</p>
+<p>They turn left, right, right again, then left before disappearing under a crack in the doorway.</p>
+<p>You look up. Above the door is a sign scrawled in thick black letters: DUNGEONS.</p>
+<p>&quot;This is it!&quot; you whisper to Snako, afraid to speak too loud in the silence. You reach out to turn the great brass doorknob and open the door. But it doesn't budge, and as you pull on the doorknob the edge of the door glows golden.</p>
+<p>&quot;Look!&quot; says Snako to you quietly, &quot;I know what the problem is: the door is enchanted. We'll never open it if we don't know the magic password.&quot;</p>
+<p>At that moment you hear lots of footsteps coming your way from around a corner. It must be a group of students on their way to their house tower! Before you have time to hide, they turn the corner and spot you.</p>
+<p>&quot;Arthur and Snako isn't it? What are you doing there you miserable little sneakers? Get back into line!&quot; To your surprise you are addressed by one of the older Snakefang students. You must have somehow taken a hidden shortcut when following the spiders.</p></p>
+</div>
+<hr>
+<p>1. You slink back into the line and head off into the passageway with the rest of the students. You glance back at the dungeon door as you walk away and narrow your eyes: I'll be back, you think. ~ <strong><a href="/story/201" >Go to number 201</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recdBCaJgvTeiqIyb" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

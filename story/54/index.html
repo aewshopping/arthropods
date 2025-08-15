@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=54>54<br>
+A magical connection<br>
+🕸️</h1>
+<div class="text-justify">
+<p>"Yes! 54 is the number - fantastic!" says Wally, beaming with delight.
+<p>&quot;Our minds have a strong magical connection and I can see that you are truly a worthy wandholder, and deserving of my special 100% discount. I can also determine which wand will match you <em>exactly</em>.&quot;</p>
+<p>Wally starts muttering to himself and he strides between the cabinets.</p>
+<p>&quot;Flexible? Yes but not too much... The action will be important... More benign than malign that's for sure...&quot;</p>
+<p>All of sudden Wally stops next to a cabinet and reaches inside.</p>
+<p>&quot;Yes!&quot; he shouts and holds up a brown wand. &quot;This is the one, Arthur. Hold it!&quot;</p>
+<p>You take it from his hand and it feels... right. Like it has always belonged to you - but that somehow <em>you</em> also belong to <em>the wand</em>.</p>
+<p>&quot;An excellent match!&quot; says Wally &quot;Made of wood from the wishing tree, with a core of spider silk from the bottom of the great spider king himself, and curiously enough, one of my own beard hairs. Give it a wave Arthur.&quot;</p>
+<p>You give the wand a bit of a shake. Effortlessly little sparks of gold zap off the end and ping into the walls. You feel magical power surge through your arm.</p>
+<p>&quot;Thank you very much Mr Wally&quot; says your Mum.</p>
+<p>&quot;Thank you Wally&quot; you say.</p>
+<p>NO. THANK YOU! says Wally speaking directly into your mind. He looks at you and winks.</p>
+<p>The only thing you are missing now is your spell book!</p></p>
+</div>
+<hr>
+<p>1. Visit Watertomes to get your year 1 spell book ~ <strong><a href="/story/17" >Go to number 17</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=rechMKG6s2XZwOCUb" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=33>33<br>
+Flying high<br>
+☁️</h1>
+<div class="text-justify">
+<p>"Would anyone like a Smarty?" you ask.
+<p>As you share the brightly coloured chocolate treats with your three new friends, you ask them about the school.</p>
+<p>&quot;We've been at Hogsnorts for three years now, Robert and me&quot; says Alex. &quot;And I can tell you, it's amazing. Hidden passageways, secret towers, dark dungeons, it's got everything. The only trouble is we have to share it with Snakefang House, the slimiest bunch of bullies you can imagine.&quot;</p>
+<p>&quot;That's right,&quot; adds Robert. &quot;We're in Lionpaw House, so it's our job to stand up to bullies like them whenever we get the chance. If I haven't punched a Snakefang on the nose at least once, it's not a good week.&quot;</p>
+<p>&quot;Err ok&quot; you reply. &quot;And what about the other houses?&quot;</p>
+<p>&quot;Oh they're ok. Boring old Hedgehog House and brain box Ravenwings. Yes they're ok but I wouldn't want to be one.&quot;</p>
+<p>&quot;Yes that's right Arthur,&quot; says Aaron. &quot;Everyone wants to be in Lionpaw House, the home of the brave. I'm going to be in Lionpaw House for sure.&quot; Aaron starts shadow boxing the air in front of him.</p>
+<p>You consider this as you pick out a red Smarty from the pile.</p>
+<p>&quot;Hey look you chose a red Smarty!&quot; exclaims Aaron. &quot;Did you know that red and gold are the colours of Lionpaw House? You chose red so maybe you will be in Lionpaw House too!&quot;</p>
+<p>As you chat with the three boys the car putters through the sky, flying over fields and woods, the Hogsnorts Express just visible far below.</p>
+<p>You decide you will:</p></p>
+</div>
+<hr>
+<p>1. just sit in the car - it's not like you have a choice ~ <strong><a href="/story/8" >Go to number 8</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recOZDytX0xrmg39Z" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

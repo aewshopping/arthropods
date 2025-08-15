@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=245>245<br>
+The heart of the dungeon<br>
+❤️</h1>
+<div class="text-justify">
+<p>You remember that woodlice are one of the few creatures that are completely immune to magic of any kind, and decide to cast a heat spell to clear a path indirectly.
+<p>You raise your wand. &quot;Fiel fresa fusila fuego!&quot;</p>
+<p>A magical flame whooshes out of your wand, sending golden sparks shooting.</p>
+<p>The flame doesn't harm the woodlice, but it heats the air, and dries it. The woodlice have no option but to retreat: without moisture they can't absorb oxygen, they would suffocate.</p>
+<p>This leaves a path.</p>
+<p>You breathe deeply and plunge forwards past the woodlouse army who are retreating into the still moist cracks in the stone.</p>
+<p>After walking further down the dank, chilly passage you and Daniel come to a door made of iron bars.</p>
+<p>Just beyond you can hear a faint murmur of voices.</p>
+<p>This is it: the heart of the dungeon. Whoever or whatever has been setting these traps for you and Daniel must be here, at the bottom of it all.</p></p>
+</div>
+<hr>
+<p>1. You push open the door and go inside. ~ <strong><a href="/story/204" >Go to number 204</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recjBcM8Fhut9y3Oq" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

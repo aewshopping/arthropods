@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=243>243<br>
+Battle rage<br>
+💪</h1>
+<div class="text-justify">
+<p>"Die beetles, die!" you cry, running towards the three giant bombardier beetles. 
+<p>In your battle rage you forget all about magic and your wand, you just want to reach the beetles and grapple them with your bare hands, mano a beetlo.</p>
+<p>&quot;Yaaaah!&quot; you cry, closing the distance fast...</p>
+<p>...but not fast enough. The three beetles swiftly raise up their bottoms, and shoot out three streams of superheated acid, accompanied by three loud popping sounds.</p>
+<p>One stream misses your head by inches, another strikes the wall beside you, the third the floor in front.</p>
+<p>&quot;Hahahaha, you'll never get me for I dance the dance of...&quot;</p>
+<p>But you never get the chance to tell them exactly what dance it is you are dancing because at that moment your foot slips on the pool of acid on the floor and slides out from underneath you. You fly through the air very briefly before slamming into the floor, bumping your head hard enough to knock you out cold.</p></p>
+</div>
+<hr>
+<p>1. You remain unconscious for an indeterminate length of time ~ <strong><a href="/story/91" >Go to number 91</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recXhPbPB0H8FqvFc" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=120>120<br>
+Back to the Tower<br>
+🏯</h1>
+<div class="text-justify">
+<p>"Let's go back to the House Tower," you say to Aaron. "I'm tired out, it must be really late now."
+<p>The two of you trudge wearily back to the Lionpaw House Tower. It is a long way but somehow you remember the path perfectly - perhaps due to some 'homing' magic that all Lionpaw's absorb when they first go to the Tower.</p>
+<p>Before long you have climbed the stone staircase and are in the Grand Lionpaw House Vestibule - the huge open space at the base of the tower, lit up with beautiful magical light-globes, and marble floor polished to a sheen by giant enchanted snails, and a faint smell of chlorine from the water park. You feel your spirits lift: could anyone have a better home to come back to than this?</p>
+<p>&quot;Night night Arthur,&quot; says Aaron with a yawn. &quot;See you in the morning.&quot;</p>
+<p>You both wearily climb the final stone staircase to your sleeping apartments, and enter.</p>
+<p>Throwing your robes over the sofa, you have a quick refreshing shower in the ensuite bathroom, dry yourself with an enormous fluffy white towel, tuck yourself up into your luxurious four-poster bed and drift off to sleep.</p></p>
+</div>
+<hr>
+<p>1. You wake up in the morning refreshed and happy. ~ <strong><a href="/story/153" >Go to number 153</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recciG3v7vPyT8co6" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

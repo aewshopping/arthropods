@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=240>240<br>
+Night school<br>
+🌙</h1>
+<div class="text-justify">
+<p>Looking around you, you can see that you are at the junction of a number of stone corridors.
+<p>One passageway has a sign above it saying &quot;Slumblebore's office this way&quot;.</p>
+<p>Another one appears to lead downwards with a gentle slope.</p>
+<p>A spiral staircase climbs up from another doorway. A little sign with an arrow reads: &quot;Your heart's desire's desire.&quot;</p>
+<p>The new moon shines in from a tall narrow window.</p>
+<p>You remember that the corridor to your left goes back to your house tower.</p>
+<p>&quot;Where shall we go now Arthur?&quot; asks Kensley.</p></p>
+</div>
+<hr>
+<p>1. Let's see if we can take a look at Slumblebore's office - he must surely be asleep at this time. ~ <strong><a href="/story/149" >Go to number 149</a></strong></p>
+<p>2. Let's try and find the dungeon. What can it be that has even Slumbledore worried? ~ <strong><a href="/story/230" >Go to number 230</a></strong></p>
+<p>3. I'm feeling tired. Let's go back to the house tower and get some sleep. ~ <strong><a href="/story/93" >Go to number 93</a></strong></p>
+<p>4. What do you think 'Your heart's desire's desire' means? you ask. "Let's go up that staircase and have a look." ~ <strong><a href="/story/290" >Go to number 290</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=rec2KzW5HEW9iaUJ4" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

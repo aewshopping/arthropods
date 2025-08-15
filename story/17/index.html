@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=17>17<br>
+Watertomes<br>
+📚</h1>
+<div class="text-justify">
+<p>Now you have your robes and your wand it will be nice to have some spells to cast, you decide and head towards Watertomes bookshop, your mum following behind you.
+<p>As you walk down the street you overhear all sorts of curious and wonderful snatches of conversation:</p>
+<p>&quot;...I put in the eye of newt and you'll never guess what happened...&quot;</p>
+<p>&quot;....then my hat blew off into a swamp...&quot;</p>
+<p>&quot;...his own fault he never should have summoned that demon...&quot;</p>
+<p>Watertomes is a small shop with an old wooden door and cramped dusty windows. You push the door open with a creak and enter hesitantly.</p>
+<p>The inside is enormous: by some magic it is many times bigger than the outside. Brightly lit bookshelves stretch away from you to the left and right.</p>
+<p>You see a boy with straight brown hair, about your age sitting on the floor, reading a book. He looks up at you as you walk in.</p>
+<p>Do you:</p></p>
+</div>
+<hr>
+<p>1. Speak to the boy, maybe he is going to Hogsnorts too ~ <strong><a href="/story/30" >Go to number 30</a></strong></p>
+<p>2. Look for your spell book, you've got no time to waste with chit chat ~ <strong><a href="/story/56" >Go to number 56</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recM5P3oW3eNLj8ua" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

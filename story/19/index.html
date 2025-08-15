@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=19>19<br>
+Your first spell book<br>
+✨</h1>
+<div class="text-justify">
+<p>"I've turned your name into the number 19" you tell Bob.
+<p>&quot;Well done! You've transformed my name into a number... and that number into your story. I can sense that you will be a powerful wizard one day.&quot;</p>
+<p>Bob hands you the red spell book. It is even heavier than it looks and feels as if it is vibrating very slightly, as if it is somehow... alive.</p>
+<p>&quot;Thank you&quot; you whisper, as you hold on tightly to your very first magical spell book.</p>
+<p>&quot;Well done Arthur!&quot; says your Mum as you walk out of the door together, &quot;That was very clever! And you saved us 14 Frigates! Now let's get your wand!&quot;</p></p>
+</div>
+<hr>
+<p>1. You go to Wally Wanderful Wand shop to get your wand ~ <strong><a href="/story/52" >Go to number 52</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recs7iYy0DY8qvzKe" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

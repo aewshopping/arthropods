@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=266>266<br>
+Taking cover<br>
+☂️</h1>
+<div class="text-justify">
+<p>Dashing round the corner you raise your wand and yell "Paraguas pronto!"
+<p>To your astonishment, from the end of your wand pops out a translucent sparkly golden umbrella.</p>
+<p>In a flash it opens up - it is big enough to cover both you and Daniel, which is just as well because in that same moment there is another popping sound and three more splotches of superheated acid from the beetles’ bottoms fly through the air towards you.</p>
+<p>Splat splat splat!</p>
+<p>The acid hits the magical golden umbrella, protecting you from harm.</p>
+<p>But not the golden umbrella. In a few moments the acid has dissolved it to nothing, just a little bit of umbrella handle is left poking out of the end of your wand.</p>
+<p>The three giant bombardier beetles raise their rear ends at you, and make menacing chittering noises.</p>
+<p>&quot;Retreat!&quot; shouts Daniel, &quot;we're sitting ducks!&quot;</p>
+<p>You both turn back and flee, rounding the corner as more blobs of acid hit the wall behind you.</p>
+<p>&quot;That wasn't exactly what I wanted the spell to do...&quot; you explain to Daniel, embarrassed.</p></p>
+</div>
+<hr>
+<p>1. You catch your breath and reassess the situation ~ <strong><a href="/story/231" >Go to number 231</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=reccqJCRi8Ve3ql5c" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

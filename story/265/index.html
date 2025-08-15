@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=265>265<br>
+What must I do?<br>
+🍉</h1>
+<div class="text-justify">
+<p>"I will do it, though I do not know how," you say. 
+<p>&quot;My dear Arthur! Students really are amazing creatures. You can learn all that there is to know about their ways in a day and yet after a hundred years they can still surprise you.&quot; Slumblebore regards you with twinkling eyes and chuckles.</p>
+<p>&quot;As to the how: first you must deactivate the locking spell on the dungeon door with the magic password: watermelon.&quot;</p>
+<p>&quot;Watermelon?&quot; you repeat.</p>
+<p>&quot;Yes: watermelon. I chose this password because it is my favourite fruit. Then you must descend the staircase that leads down into the very depths of the school. In the past students would be imprisoned in the dungeons for misbehaviour. Now they are mainly used to store broken chairs and Christmas decorations. But we go down there so infrequently there is no telling what evil is brewing in some dark corner.&quot;</p>
+<p>&quot;I advise you to keep your wand at the ready and your wits sharp Arthur. And remember all the lessons the teachers have taught you. You will be put to the test and I do not know how it will turn out.&quot;</p>
+<p>&quot;Sir,&quot; you ask. &quot;What do you <em>think</em> is down there?&quot;</p>
+<p>&quot;Long have I studied this question, seeking knowledge in ancient scrolls and consulting with the wisest of the wise. Not a sausage. All I can say is that in the dead of night when I listen hard at the dungeon door I can sometimes hear a faint scratching noise... like the sound of a million claws far away, scratching and scrabbling at something. Either that or some mice eating a hole in the skirting board.&quot;</p></p>
+</div>
+<hr>
+<p>1. Gathering your courage you head out of the office back to the midnight Hogsnorts corridors. ~ <strong><a href="/story/229" >Go to number 229</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recAMvo2pHF7Xkp7W" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=160>160<br>
+Another chance<br>
+🌌</h1>
+<div class="text-justify">
+<p>The clock strikes one... two... three.
+<p>The golden glow shining all around you gets stronger and stronger and soon you have to shut your eyes to the blinding golden light.</p>
+<p>After a momentary sensation of vertigo, as if you have all of a sudden <em>fallen</em>, you sense that the golden light is fading away.</p>
+<p>Opening your eyes you find you are at the bottom of a great stone well, with a circle of light far above. You realise that you have magically transported back to Percy the Picking Pigeon's hole in the Hogsnort's Great Hall, just as Slumblebore said you would. Somehow you know that you have also travelled back in time to before, when you had just arrived at the school. You are that Arthur once again in Percy's hole, but this time you can make a new choice.</p>
+<p>&quot;Well Arthur,&quot; says a voice directly to your brain. &quot;What will you choose, coo coo.&quot; It is Percy the giant pigeon and you see again his giant yellow eyes staring at you.</p>
+<p>This time you know you will make a good choice...</p></p>
+</div>
+<hr>
+<p>1. I want to be in Lionpaw House, the home of the brave, you think hard to yourself. ~ <strong><a href="/story/15" >Go to number 15</a></strong></p>
+<p>2. For me it is Ravenwing House, you think, I want to learn and explore. ~ <strong><a href="/story/23" >Go to number 23</a></strong></p>
+<p>3. Snakefang House for me, I want to rise to the top and be the best, you say in your mind. ~ <strong><a href="/story/192" >Go to number 192</a></strong></p>
+<p>4. I want to be in Hedgehog House please, you think, I want to have a nice time and stay out of trouble. ~ <strong><a href="/story/59" >Go to number 59</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recyBzbOPN0TK9XHk" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

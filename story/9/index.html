@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=9>9<br>
+The invitation<br>
+📜</h1>
+<div class="text-justify">
+<p>You rip open the envelope and pull out an ancient looking piece of parchment.
+<p>At the top it says <strong>Hogsnorts School of Magic</strong></p>
+<p>A school of magic? you think. What the...? Maybe this <em>is</em> junk mail after all. You carry on reading...</p>
+<p>.........................................</p>
+<p><em>Dear Arthur,</em></p>
+<p><em>I am delighted to inform you that you have been selected to attend Hogsnorts School of Magic. You have hidden but powerful magical abilities :-)</em></p>
+<p><em>As a new student you will need to bring the following items on your first day:</em></p>
+<p><em>- a magic wand</em><br>
+<em>- a wizard's robe and hat</em><br>
+<em>- a year-1 spellbook</em></p>
+<p><em>Term will start on 1 September. Please come to Leeds Railway Station, from where the Hogsnorts Express will depart at 9.34 precisely.</em></p>
+<p><em>Yours resplendently,<br>
+Zebediah Slumblebore<br>
+Headmaster<br>
+Hogsnorts School</em></p>
+<p><em>P.S. I am pleased to say that the Hogsnorts Squidditch team is sponsored this year by Wally's Wanderful Wands shop. Show this letter at Wally's shop, Hippoto Mews to receive a 10% discount!</em></p>
+<p><em>P.P.S. Remember the secret code to enter Hippoto Mews is TAP TAP TAP... TAP.</em></p>
+<p><em>P.P.P.S. Note that due to the alarming recent magical disturbances at the school, the parents of all pupils are required to sign a &quot;child's demise liability waiver&quot; before arriving at Hogsnorts.</em></p>
+<p>.........................................</p>
+<p>You feel your blood prickle to the surface of your skin. Can this be real? Do you really have hidden powerful magic abilities? Maybe this is some big mistake? Or worse - a joke.</p>
+<p>But then... there have been times where <em>strange things</em> have occurred without you knowing why.</p>
+<p>Like that time you fell out of the apple tree in your cousin's house, but instead of falling down you <em>floated</em> down like a leaf, and gently landed on the ground.</p>
+<p>Or that time you played hide and seek and wished that you could make yourself invisible and <em>no-one could find you</em> even though you were just hiding under the kitchen table and it should have been easy.</p>
+<p>And the fact that every now and again you have a conversation with a spider and you can <em>understand what they are saying</em>.</p>
+<p>A slow smile spreads across your face. It <em>must be true!</em></p>
+<p>You are going to magic school.</p></p>
+</div>
+<hr>
+<p>1. Go and buy your wizarding things ~ <strong><a href="/story/40" >Go to number 40</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recJIxxxJ4s3YbJ1b" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

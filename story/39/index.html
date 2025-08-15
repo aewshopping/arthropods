@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=39>39<br>
+Where is the Hogsnort&#39;s Express?<br>
+🚉</h1>
+<div class="text-justify">
+<p>You check your rucksack for the one hundredth time. Carefully folded wizard robes: check. Year one spellbook: check. One magic wand: check. Spare pair of socks: check.
+<p>You've got everything you need to go to the Hogsnorts school of wizardry!</p>
+<p>The only thing you need to figure out now is how to get there.</p>
+<p>You are waiting by the ticket barriers at Leeds railway station with your brother Evan and your Dad. Your Dad is checking his watch and looking up at the train departure board anxiously.</p>
+<p>&quot;Arthur&quot; he says, &quot;it is ten minutes until the train is supposed to leave and I can't see Hognsorts on the departure board anywhere. Do you know where we are supposed to go?&quot;</p>
+<p>&quot;On the letter it just says: <em>the train will depart at 9.34 precisely from Leeds railway station</em>. But it doesn't say <em>where</em> in Leeds railway station.&quot;</p>
+<p>Just then you notice something strange. One of the ticket inspectors by the ticket barriers is wearing a pointy black hat and sun glasses. It could just be coincidence or maybe he knows <em>how to find the magic train!</em>.</p>
+<p>&quot;Come on Evan, Dad,&quot; you say and walk over to talk to the ticket inspector.</p>
+<p>&quot;Excuse me,&quot; you ask &quot;do you know where we can find the Hogsnorts Express?&quot;</p>
+<p>The ticket inspector turns to look straight at you, and removes his sun glasses. You are startled to see that his eyes are completely white with no visible pupil at all. His voice comes out as a rasp:</p>
+<p>&quot;<em>The Express you seek,<br>
+Will leave off-peak,<br>
+With a puff of steam and a piercing shriek.<br>
+But first you need to take a leak.</em>&quot;</p>
+<p>He then replaces his sun glasses, turns away from you and doesn't say another word.</p>
+<p>&quot;It's a riddle!&quot; you exclaim. &quot;The train will leave off-peak - yes that makes sense it will leave just after 9.30. With a puff of steam and a piercing shriek - that must mean it is a steam train with a whistle. But what does the last part about taking a leak mean?&quot;</p>
+<p>&quot;I think he is telling you to go to the toilet before you get on the train&quot; says Dad. &quot;A last wee: very sensible advice.&quot;</p>
+<p>Just then you see an odd looking family dashing through the station. The two adults are puffing and out of breath and the three children are <em>wearing wizard robes!</em>&quot;</p>
+<p>Do you:</p></p>
+</div>
+<hr>
+<p>1. Visit the toilet to see if you can unravel the ticket inspectors riddle. ~ <strong><a href="/story/31" >Go to number 31</a></strong></p>
+<p>2. Go and talk to the odd looking family, perhaps they can just tell you where the train is without any silly puzzles. ~ <strong><a href="/story/14" >Go to number 14</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recuyhdY1cRzqdK8b" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

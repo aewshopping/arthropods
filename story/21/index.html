@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=21>21<br>
+A new friend?<br>
+📖</h1>
+<div class="text-justify">
+<p>It will be good to get to know someone you might be going to school with, perhaps he can tell you what it's like.
+<p>&quot;Hello&quot; you say to the boy. &quot;I'm Arthur. Are you going to Hogsnorts?&quot;</p>
+<p>The boy looks up at you. &quot;Yep I'm going to Hogsnorts. Did you know that they have the biggest magical library in the country.&quot;</p>
+<p>&quot;No...&quot; you say. You wonder how many other magical libraries there are in the country.</p>
+<p>&quot;Anyway I'm Daniel Colliers-Wood. And this is my little brother Robin Colliers-Wood.&quot;</p>
+<p>You notice another boy sitting just round the next bookshelf from Daniel, reading a comic book about a policeman with the head of a dog.</p>
+<p>&quot;Daniel,&quot; you ask &quot;Do you know much about Hogsnorts? What it's like when you get there I mean?&quot;</p>
+<p>&quot;Yes, I've read all about it. Well the main thing to know is that there are four &quot;houses&quot; or teams you could call them. The best house is Ravenwing house, that's where I want to go, Ravenwing House has that big library I told you about. The Ravenwings love studying. The other houses are Lion House for the brave, Snakefang House for the powerful, and Hedgehog House for the prickly. You will probably be in Hedgehog House.&quot;</p>
+<p>&quot;No I won't!&quot; you protest automatically.</p>
+<p>&quot;Alright Mr Prickles,&quot; says Daniel. &quot;I was just trying to wind you up. Anyway no one knows which house they will be in until they get to Hogsnorts.&quot;</p>
+<p>&quot;I want to go to Snakefang house, that would be so cool!&quot; pipes up Daniel's younger brother Robin.</p>
+<p>&quot;Listen young man - Daniel was it?&quot; your mum interrupts &quot;I'm sure Arthur will be in Lion House, he is a very brave boy. Do you remember Arthur when you got stung by a wasp and didn't even cry?&quot;</p>
+<p>&quot;Mu-um!&quot; you complain. Turning back to Daniel: &quot;Anyway Daniel, see you around.&quot;</p>
+<p>&quot;Bye bye Arthur&quot; says Daniel picking up her book.</p></p>
+</div>
+<hr>
+<p>1. Look for your a spell book ~ <strong><a href="/story/4" >Go to number 4</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recnAEd97Mea343t1" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

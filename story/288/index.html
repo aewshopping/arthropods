@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=288>288<br>
+Beetle battle<br>
+🪲</h1>
+<div class="text-justify">
+<p>You find yourself face to face with a trio of bombardier beetles, who seem to be guarding the way. 
+<p>&quot;Look how big they are!&quot; says Snako. &quot;I bet they are not friendly.&quot;</p>
+<p>One of them makes an angry chittering sound. Even though you don't speak beetle you are pretty sure this beetle doesn't like you.</p>
+<p>The three beetles turn around in the corridor to face away from you.</p>
+<p>&quot;Look they're running away, the cowards!&quot; shouts Snako letting out a crazy half-laugh.</p>
+<p>Suddenly there is a loud popping sound and a steam of superheated liquid shoots out of the beetles' bottoms.</p>
+<p>&quot;Duck!&quot; you cry, and you and Snako throw yourself to one side. The liquid misses you by inches. The stone flagstone bubbles and fizzes where the liquid struck it.</p>
+<p>You both pick yourself up off the floor and scramble back round the corner for safety.</p>
+<p>&quot;That was too close,&quot; you say. &quot;We need to find a way to destroy those beasts, or at least get them out of the way.&quot;</p>
+<p>You think hard, there must be a spell that you can use. Some spell that kills them or puts them out of action for a while.</p>
+<p>After a moment, with a fierce glint in your eye, you decide. You leap out from your hiding place, your wand at the ready.</p></p>
+</div>
+<hr>
+<p>1. Yelling "Tweetle beetle bottle battle!" ~ <strong><a href="/story/137" >Go to number 137</a></strong></p>
+<p>2. Shouting "Paraguas pronto!" ~ <strong><a href="/story/108" >Go to number 108</a></strong></p>
+<p>3. Screaming "Die beetles, die." ~ <strong><a href="/story/277" >Go to number 277</a></strong></p>
+<p>4. Crying "Somnolencia salchicha sabrosa!" ~ <strong><a href="/story/257" >Go to number 257</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recgFngRVCDl9ls6n" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

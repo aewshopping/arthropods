@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=12>12<br>
+Arriving in Hognsorts<br>
+🏰</h1>
+<div class="text-justify">
+<p>"Yaaargh!" you exclaim as the ground drops away beneath you. You have never travelled by flying monkey before and it's an unnerving experience, not helped by the fact that the monkeys are screeching and chattering constantly. They seem to be having an excellent time.
+<p>But then something else makes you forget about the ever growing drop to the ground, about the grasping fingers of the winged monkey on either side: Hogsnorts.</p>
+<p>A mile or two away you see a colossal stone building at the top of a grassy hill. Towers sprout from the building like mushrooms, spiralling outwards at crazy angles. The roofs are studded with battlements. The walls are encrusted with beautiful stained glass windows. And over it all hangs a faint golden glow of pure magic. Hogsnorts School of Magic.</p>
+<p>But you have no time to take in the view. A loud car horn honk comes from the clouds <em>above</em> you. You twist your head up to see...</p>
+<p>...a dark blue ford fiesta corkscrewing through the sky, heading straight for the troupe of winged monkeys! A flying car - amazing! you think, momentarily forgetting you are about to be flown over.</p>
+<p>Luckily nothing is more agile than a flying monkey and the primates pirouette away from the barely controlled flying vehicle as it zooms through the middle of them. From the window of the car you hear a faint cry of &quot;sorry!&quot; as the monkeys chatter with rage.</p>
+<p>The car hurtles off towards Hogsnorts and you can just make out a bumpy but survivable crash landing and three small figures running out of the car towards the school. The car turns round and flies off through the sky.</p>
+<p>The rest of the flight is comparatively uneventful.</p>
+<p>The monkeys soar in through an open window of the Hogsnorts Great Hall and gently set you down on a wooden bench at a table reserved for first year students. You feel you are a long way from Leeds railway station.</p></p>
+</div>
+<hr>
+<p>1. Try to recover your composure and wait to see what happens next ~ <strong><a href="/story/53" >Go to number 53</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recrgIQOnjwgzwEYg" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

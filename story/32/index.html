@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=32>32<br>
+Measuring up<br>
+📏</h1>
+<div class="text-justify">
+<p>"Toast will burn and porridge bubble, measure up this boy and save me the trouble!" shrieked witch number 2.
+<p>The incantation complete, the magic tape measure zooms around your body like a whirlwind, measuring everything from your inside leg measurement, to the distance between your nostrils, to the length of your ear lobes.</p>
+<p>At the same time a magic biro is writing down all these measurements on a notepad.</p>
+<p>After a few minutes, in which you are frightened to move in case the tape measure accidentally shoots up your nose, the tape neatly rolls itself up and lands on a table.</p>
+<p>Witch number 2 looks carefully at the scribbled numbers in the notepad and counts on her fingers.</p>
+<p>She looks up at her sister and yells: &quot;Small!&quot;</p>
+<p>As witch number 1 scuttles off to get a small robe for you, your Mum, who has been standing quietly to one side clears her throat.</p>
+<p>&quot;Is there any chance we could do some sort of challenge or test?&quot; your mum asks. &quot;And get a discount of say, 100%? I'm afraid we didn't bring any wizard money...&quot;</p>
+<p>Snako Malboy snorts and rolls his eyes.</p>
+<p>&quot;A test? A challenge? No deary. What we like are <em>wagers</em>&quot;</p>
+<p>&quot;Ok whatever. Can we do a wager and not pay anything?&quot; your mum says.</p>
+<p>&quot;I wager you can't guess my age. If you can, you can keep the robe and get a free hat. If you fail you will stay in this shop for ever!&quot;</p>
+<p>&quot;I'll do it&quot; you say bravely, &quot;but I will need a clue.&quot;</p>
+<p>&quot;How old are you boy?&quot; asks the witch.</p>
+<p>&quot;I'm ten years old.&quot;</p>
+<p>&quot;Here's your clue. In ten years time I will be ten times as old as you are now. How old am I, right now?&quot;</p></p>
+</div>
+<hr>
+<p>1. Turn to the number that is the age of the witch ~ <strong><a href="/story/90" >Go to the number of your answer</a></strong></p>
+<p>2. This is getting too intense, step outside to take a breather ~ <strong><a href="/story/6" >Go to number 6</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recyQguG84Pok0AlK" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

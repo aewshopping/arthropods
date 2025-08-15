@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=117>117<br>
+Lesson time<br>
+🎓</h1>
+<div class="text-justify">
+<p>You and Daniel head to the main hall where you had dinner on the first night. There on the wall are pinned the lesson timetables for the different year groups. Lots of children clamour round trying to see where to go next.
+<p>&quot;Here we are,&quot; you say. &quot;What lesson shall we go to?&quot;</p>
+<p>You look down the list and choose...</p></p>
+</div>
+<hr>
+<p>1. Offensive magic, with Professor Comicus Jape. ~ <strong><a href="/story/124" >Go to number 124</a></strong></p>
+<p>2. Defence against the dark arts, with Professor Madame Blatavsky. ~ <strong><a href="/story/194" >Go to number 194</a></strong></p>
+<p>3. Care of magical creatures, with Professor Eric Knid. ~ <strong><a href="/story/278" >Go to number 278</a></strong></p>
+<p>4. You decide to call it a day and head back to the House Tower ~ <strong><a href="/story/253" >Go to number 253</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recUhW3XjJO2NoN4W" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

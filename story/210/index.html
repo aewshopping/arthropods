@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=210>210<br>
+Cut through the web<br>
+🗡️</h1>
+<div class="text-justify">
+<p>"Vamos varita vencer vistosamente!" you exclaim as dramatically as you can manage.
+<p>A flickering golden light slowly extends from the top of your wand until it is about a metre long. You swing the &quot;light sword&quot; around and it makes a satisfying swishing zooming sound. Your whole body thrills with the sensation of power.</p>
+<p>&quot;Aaah yes!&quot; you hiss, and swipe the nearest strand of spider silk. Despite it being as thick as a steel cable and twice as tough, the light sword slices through it with no effort at all and the spider web flops to the floor.</p>
+<p>You steadily walk forwards, cutting through the spider web with your magical golden light sword, feeling the magic from the wand course through your body. The sensation is this powerful magic is delicious.</p>
+<p>Soon the spider web has gone. You and Snako race down the passageway and skid around a corner...</p></p>
+</div>
+<hr>
+<p>1. You skid round the corner... ~ <strong><a href="/story/288" >Go to number 288</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recUq79MOuAPiyCYZ" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=199>199<br>
+Pass friend<br>
+🎯</h1>
+<div class="text-justify">
+<p>As you shout "Watermelon!" at the top of your voice, you point your wand at the door.
+<p>You can feel your arm channel powerful magic. Magical golden lines leap from the tip of the wand. The golden lines strike the door and entwine the handle, the hinges, the iron bands that hold the door together.</p>
+<p>An enchantingly clear note sounds and at the same time the dungeon door swings open.</p>
+<p>&quot;You did it Arthur!&quot; cries Daniel, and the two of you enter the passageway, wands at the ready.</p>
+<p>Stairs head downwards into the gloom, a gloom alleviated by dim flickering torches, enchanted by magic to burn forever and never go out.</p>
+</p>
+</div>
+<hr>
+<p>1. At the bottom of the stairs you stop and look around you. ~ <strong><a href="/story/193" >Go to number 193</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recxUarKo5B4O3H1I" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>

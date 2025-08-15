@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f4b862ff" />
+    
+    <title>Arthur Otley and the Order of the Arthropods</title>
+    
+    <link rel="stylesheet" type="text/css" href="/public/style.css" />
+  </head>
+  <body class="flex-rows">
+
+    <header>
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+</header>
+<article class="flex-col2">
+<h1 class="text-centre" id=153>153<br>
+Wake up call<br>
+⏰</h1>
+<div class="text-justify">
+<p>You wake up feeling refreshed and content. You wonder why you are feeling so cheerful and then you remember: you are a pupil in the Hogsnorts school of magic, and have been chosen for the best house - Lionpaw. You have already made a good friend, Aaron Bleezely, and you have your own four-poster bed with an ensuite bathroom. Life is looking good!
+<p>You jump out of bed and pull on your wizard's robes.</p>
+<p>&quot;Aaron&quot; you shout as you walk out onto the staircase, &quot;are you up?&quot;</p>
+<p>At that moment you see Aaron running up the stairs towards you in his swimming trunks.</p>
+<p>&quot;Hey Arthur, you woke up at last! I've been playing in the waterslides for the last hour. The Lionpaw House Tower is soooo cool. What shall we do today? I know there are lessons but I'm sure no-one will notice if we skip them for a day.&quot;</p></p>
+</div>
+<hr>
+<p>1. You explain to Aaron that your really want to learn some magic spells and that you can do waterslides together some other time. ~ <strong><a href="/story/225" >Go to number 225</a></strong></p>
+<p>2. He's got a point you think. Magic school will last for six years. Surely bunking off for one day won't do any harm? ~ <strong><a href="/story/211" >Go to number 211</a></strong></p>
+<br>
+<form id="numberForm">
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
+</form>
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+</article>
+<footer>
+Edit here: <a href="https://airtable.com/appwHHPuLPYFSpBwv/pagP1bZI9Mlm1p0Vk?khoME=recbr2vd5RaW8mxLj" target="_blank">airtable record link</a>
+</footer>
+
+
+  </body>
+</html>
