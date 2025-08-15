@@ -31,7 +31,11 @@ jobs:
           key: ${{ runner.os }}-eleventy-fetch-cache
 
       - run: npm install
-      - run: npx @11ty/eleventy --pathprefix=/arthropods/
+      
+      - name: Build Eleventy files
+        run: npx @11ty/eleventy --pathprefix=/arthropods/
+        env:
+          AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
