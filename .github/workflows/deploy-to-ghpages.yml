@@ -31,7 +31,12 @@ jobs:
           key: ${{ runner.os }}-eleventy-fetch-cache
 
       - run: npm install
-      
+
+      - name: Debug API Key Variable
+        run: echo "The API Key value is: $AIRTABLE_ARTHROPOD_API"
+        env:
+          AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}
+          
       - name: Build Eleventy files
         env:
           AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}
