@@ -1,0 +1,66 @@
+---
+layout: base.njk
+pagination:
+  data: story
+  size: 1
+  alias: story
+permalink: "story/{{ story.story_num }}/"
+---
+
+<header>
+
+<div class="flex-columns">
+<div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
+<div class="flex-col2"><div>
+<div class="flex-col3"><a href="../../index/">home</a></div>
+</div>
+
+</header>
+
+<article class="flex-col2">
+
+{% set directoryPath = page.url.split('/').slice(0, -2).join('/') + '/' %}
+
+<h1 class="text-centre" id={{story.story_num}}>{{ story.story_num}}<br>
+{{ story.title }}<br>
+{{ story.emoji }}</h1>
+<div class="text-justify">
+<p>{{ story.content|safe}}</p>
+</div>
+<hr>
+<p>1. {{ story.choice_1_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_1_storynum}}" >{{ story.choice_1_goto}}</a></strong></p>
+{% if story.choice_2_text %}<p>2. {{ story.choice_2_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_2_storynum}}" >{{ story.choice_2_goto}}</a></strong></p>{% endif %}
+{% if story.choice_3_text %}<p>3. {{ story.choice_3_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_3_storynum}}" >{{ story.choice_3_goto}}</a></strong></p>{% endif %}
+{% if story.choice_4_text %}<p>4. {{ story.choice_4_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_4_storynum}}" >{{ story.choice_4_goto}}</a></strong></p>{% endif %}
+{% if story.choice_5_text %}<p>5. {{ story.choice_5_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_5_storynum}}" >{{ story.choice_5_goto}}</a></strong></p>{% endif %}
+
+<form id="numberForm">
+  <p><label for="numberInput">Enter a number:</label>
+  <input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit">submit</button></p>
+</form>
+
+<script>
+document.getElementById('numberForm').addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  const input = document.getElementById('numberInput');
+  
+  // Check if the input is valid using HTML5 validation
+  if (input.checkValidity()) {
+    const number = input.value;
+    const currentPath = window.location.pathname;
+    const pathSegments = currentPath.split('/');
+    const newPathSegments = pathSegments.slice(0, -2);
+    const newPath = newPathSegments.join('/');
+    const newUrl = `${window.location.origin}${newPath}/${number}`;
+    window.location.href = newUrl;
+  }
+});
+</script>
+
+</article>
+
+<footer>
+Edit here: <a href="{{story.interface_link}}" target="_blank">airtable record link</a>
+</footer>

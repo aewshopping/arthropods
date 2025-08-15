@@ -7,7 +7,7 @@ module.exports = async function(eleventyConfig) {
 	};
   
 	eleventyConfig.setLibrary("md", markdownIt(options));
-  eleventyConfig.addPassthroughCopy("./public");
+  eleventyConfig.addPassthroughCopy("public");
 };
 
 module.exports.config = {

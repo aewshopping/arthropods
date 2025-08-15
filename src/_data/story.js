@@ -4,7 +4,7 @@
 const { AssetCache } = require("@11ty/eleventy-fetch");
 const Airtable = require("airtable");
 
-const assetCacheId = "airtableCMS6";
+const assetCacheId = "airtableCMS8";
 const airtableCMSTable = "tblY5DZkA8Y5UlgXt";
 const airtableBase = "appwHHPuLPYFSpBwv";
 const airtableAPIKey = process.env.AIRTABLE_ARTHROPOD_API;

@@ -1,6 +1,59 @@
+:root {
+  --fluid-30-56: clamp(1.875rem, 0.7917rem + 4.3333vw, 3.5rem);
+  --fluid-20-28: clamp(1.25rem, 0.9167rem + 1.3333vw, 1.75rem);
+  --fluid-16-24: clamp(1rem, 0.6667rem + 1.3333vw, 1.5rem);
+  --color-primary: antiquewhite;
+  --color-secondary: rgb(255, 223, 163);
+}
+
 body {
   margin: 0px;
   font-family: Garamond, Baskerville, serif;
+  background-color: var(--color-secondary);
+  min-height: 100vh;
+}
+
+article {
+  max-width: 85ch; /* Limits the width of the article content */
+  margin: 0 auto;    /* Centers the element horizontally */
+  padding: 20px;
+  flex-grow: 1;
+}
+
+h1 {
+  font-size: var(--fluid-30-56);
+}
+
+p, p *, ul * {
+  font-size: var(--fluid-20-28);
+}
+
+footer {
+  padding:20px;
+  background-color: var(--color-primary);
+  text-align:right;
+  font-size: var(--fluid-16-24);
+}
+
+header {
+  padding-inline:20px;
+  padding-block:10px;
+  background-color: var(--color-primary);
+  text-align:right;
+  font-size: var(--fluid-16-24);
+}
+
+.flex-columns {
+  display: flex;
+  flex-direction: row;
+}
+.flex-col1 {text-align: left;}
+.flex-col2 {flex-grow: 1;}
+.flex-col3 {text-align: right;}
+
+.flex-rows {
+  display: flex;
+  flex-direction: column;
 }
 
 .text-centre {text-align: center;}

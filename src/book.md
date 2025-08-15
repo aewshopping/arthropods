@@ -1,7 +1,5 @@
 ---
-layout: base.njk
-permalink: 'book.html'
-permalinkBypassOutputDir: true
+layout: base_book.njk
 eleventyExcludeFromCollections: true
 ---
 
