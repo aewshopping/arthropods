@@ -4,11 +4,10 @@ module.exports = async function(eleventyConfig) {
 
 	let options = {
 		html: true,
-    typographer: true,
-		quotes: '“”‘’',
 	};
   
 	eleventyConfig.setLibrary("md", markdownIt(options));
+  eleventyConfig.addPassthroughCopy("./public");
 };
 
 module.exports.config = {
