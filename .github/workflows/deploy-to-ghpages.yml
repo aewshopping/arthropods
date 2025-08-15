@@ -36,11 +36,11 @@ jobs:
         run: echo "The API Key value is: $AIRTABLE_ARTHROPOD_API"
         env:
           AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}
-          
+      
       - name: Build Eleventy files
+        run: npx @11ty/eleventy --pathprefix=/arthropods/
         env:
           AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}
-        run: npx @11ty/eleventy --pathprefix=/arthropods/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
