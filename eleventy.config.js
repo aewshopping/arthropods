@@ -8,9 +8,13 @@ module.exports = async function(eleventyConfig) {
   
 	eleventyConfig.setLibrary("md", markdownIt(options));
   eleventyConfig.addPassthroughCopy("public");
+
+  const { HtmlBasePlugin } = await import("@11ty/eleventy");
+  eleventyConfig.addPlugin(HtmlBasePlugin);
 };
 
 module.exports.config = {
+    pathPrefix: "/arthropods/",
     markdownTemplateEngine: "njk",
     dir: {
       input: "src",
