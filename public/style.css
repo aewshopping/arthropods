@@ -56,5 +56,30 @@ header {
   flex-direction: column;
 }
 
+input {
+  padding: 10px 10px;
+  border-radius: 6px;
+  border: solid 1px black;
+}
+
+.btn {
+  padding: 10px 10px;
+  margin-inline: 10px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+  min-width: 60px;
+}
+.btn-dark {
+  background-color: rgba(255,255,255,0.5);
+  color: black;
+  border: solid 1px black;
+}
+.btn-dark:hover {
+  text-decoration: underline;
+  box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
+  cursor: pointer
+}
+
 .text-centre {text-align: center;}
 .text-justify {text-align: justify;}

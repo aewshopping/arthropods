@@ -34,10 +34,11 @@ permalink: "story/{{ story.story_num }}/"
 {% if story.choice_4_text %}<p>4. {{ story.choice_4_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_4_storynum}}" >{{ story.choice_4_goto}}</a></strong></p>{% endif %}
 {% if story.choice_5_text %}<p>5. {{ story.choice_5_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_5_storynum}}" >{{ story.choice_5_goto}}</a></strong></p>{% endif %}
 
+<br>
+
 <form id="numberForm">
-  <p><label for="numberInput">Enter a number:</label>
-  <input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
-  <button type="submit">submit</button></p>
+  <p><input type="number" id="numberInput" name="numberInput" min="1" max="300" required inputmode="numeric">
+  <button type="submit" class="btn btn-dark">→</button></p>
 </form>
 
 <script>
@@ -50,9 +51,7 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
   if (input.checkValidity()) {
     const number = input.value;
     const currentPath = window.location.pathname;
-    const pathSegments = currentPath.split('/');
-    const newPathSegments = pathSegments.slice(0, -2);
-    const newPath = newPathSegments.join('/');
+    const newPath = currentPath.split('/').slice(0, -2).join('/');
     const newUrl = `${window.location.origin}${newPath}/${number}`;
     window.location.href = newUrl;
   }
