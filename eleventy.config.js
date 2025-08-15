@@ -14,6 +14,7 @@ module.exports = async function(eleventyConfig) {
 };
 
 module.exports.config = {
+	pathPrefix: "/arthropods/",
     markdownTemplateEngine: "njk",
     dir: {
       input: "src",
