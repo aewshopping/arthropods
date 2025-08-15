@@ -30,12 +30,7 @@ jobs:
           path: ./.cache
           key: ${{ runner.os }}-eleventy-fetch-cache
 
-      - run: npm install
-
-      - name: Debug API Key Variable
-        run: env
-        env:
-          AIRTABLE_ARTHROPOD_API: ${{ secrets.AIRTABLE_ARTHROPOD_API }}      
+      - run: npm install     
 
       - name: Build Eleventy files
         run: npx @11ty/eleventy --pathprefix=/arthropods/
