@@ -4,7 +4,7 @@
 const { AssetCache } = require("@11ty/eleventy-fetch");
 const Airtable = require("airtable");
 
-const assetCacheId = "airtableCMS4";
+const assetCacheId = "airtableCMS6";
 const airtableCMSTable = "tblY5DZkA8Y5UlgXt";
 const airtableBase = "appwHHPuLPYFSpBwv";
 const airtableAPIKey = process.env.AIRTABLE_ARTHROPOD_API;
@@ -13,7 +13,7 @@ var base = new Airtable({ apiKey: airtableAPIKey }).base(
   airtableBase
 );
 
-module.exports = () => {
+module.exports = async function () {
   let asset = new AssetCache(assetCacheId);
 
   // Cache the data in 11ty for one day

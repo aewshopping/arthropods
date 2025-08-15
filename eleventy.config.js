@@ -1,6 +1,17 @@
+const markdownIt = require("markdown-it");
+
 module.exports = async function(eleventyConfig) {
 
-return {
+	let options = {
+		html: true,
+    typographer: true,
+		quotes: '“”‘’',
+	};
+  
+	eleventyConfig.setLibrary("md", markdownIt(options));
+};
+
+module.exports.config = {
     markdownTemplateEngine: "njk",
     dir: {
       input: "src",
@@ -8,5 +19,3 @@ return {
       output: "_site"
     }
   };
-
-};
