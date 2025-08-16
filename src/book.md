@@ -63,7 +63,7 @@ Dungeon adventure
 <div class="text-justify">
 <p>{{ entry.content|safe}}</p>
 </div>
-<hr>
+<p class="text-centre">............................................................</p>
 {% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</p>{% endif %}
 {% if entry.choice_2_text %}<p>2. {{ entry.choice_2_text|safe}} ~ <strong>{{ entry.choice_2_goto}}</strong></p>{% endif %}
 {% if entry.choice_3_text %}<p>3. {{ entry.choice_3_text|safe}} ~ <strong>{{ entry.choice_3_goto}}</strong></p>{% endif %}
