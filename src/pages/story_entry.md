@@ -12,7 +12,7 @@ permalink: "story/{{ story.story_num }}/"
 <div class="flex-columns">
 <div class="flex-col1">Arthur Otley and the Order of the Arthropods</div>
 <div class="flex-col2"><div>
-<div class="flex-col3"><a href="../../index/">home</a></div>
+<div class="flex-col3"><a href="../../">home</a></div>
 </div>
 
 </header>
@@ -23,8 +23,8 @@ permalink: "story/{{ story.story_num }}/"
 
 <h1 class="text-centre" id={{story.story_num}}>{{ story.story_num}}<br>
 {{ story.title }}<br>
-{{ story.emoji }}</h1>
-<div class="text-justify">
+<span class="text-size-x2">{{ story.emoji }}</span></h1>
+<div>
 <p>{{ story.content|safe}}</p>
 </div>
 <hr>
@@ -61,5 +61,5 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
 </article>
 
 <footer>
-Edit here: <a href="{{story.interface_link}}" target="_blank">airtable record link</a>
+<a href="{{story.record_link}}" target="_blank">airtable record</a> | <a href="{{story.interface_link}}" target="_blank">airtable interface</a>
 </footer>

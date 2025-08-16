@@ -57,29 +57,37 @@ header {
 }
 
 input {
-  padding: 10px 10px;
+  padding: 20px 20px;
   border-radius: 6px;
   border: solid 1px black;
 }
 
 .btn {
-  padding: 10px 10px;
+  padding: 20px 20px;
   margin-inline: 10px;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  min-width: 60px;
+  min-width: 80px;
+  font-size: 30px;
 }
 .btn-dark {
   background-color: rgba(255,255,255,0.5);
   color: black;
-  border: solid 1px black;
+  border: solid 0px black;
+  border-radius: 25px;
 }
 .btn-dark:hover {
-  text-decoration: underline;
   box-shadow: 4px 4px 0px 0px rgba(0,0,0,0.5);
   cursor: pointer
 }
 
+#numberForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .text-centre {text-align: center;}
 .text-justify {text-align: justify;}
+.text-size-x2 {font-size: 2em;}
