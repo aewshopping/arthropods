@@ -14,8 +14,9 @@ This repo is used to turn an airtable database into a "choose your own adventure
 2. Download this html file. Using MS word open this html file to automatically import it.
 3. Find and replace any page break markers (I have used `~pagebreak~` for this).
 4. Find and replace `"` with `"`, and `'` with `'`, to use the Word smart quotes replacer thing. This appears more reliable that using the markdown it similar functionality.
-5. Copy the sections of the imported Word file into your template book `.docx` document.
-6. Create pdf and make sure that fonts are embedded.
+5. I also found that my markdown it engine missed a few italics so I did a word find `\_(*)\_` and replace with `\1` (+ format = italic) to bulk update - you need to select the `use wildcards` option in the Word dialogue box.
+6. Copy the sections of the imported Word file into your template book `.docx` document.
+7. Create pdf and make sure that fonts are embedded.
 
 ## My gotchas
 
