@@ -28,7 +28,7 @@ permalink: "story/{{ story.story_num }}/"
 <p>{{ story.content|safe}}</p>
 </div>
 <hr>
-<p>1. {{ story.choice_1_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_1_storynum}}" >{{ story.choice_1_goto}}</a></strong></p>
+{% if story.choice_1_text %}<p>1. {{ story.choice_1_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_1_storynum}}" >{{ story.choice_1_goto}}</a></strong></p>{% endif %}
 {% if story.choice_2_text %}<p>2. {{ story.choice_2_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_2_storynum}}" >{{ story.choice_2_goto}}</a></strong></p>{% endif %}
 {% if story.choice_3_text %}<p>3. {{ story.choice_3_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_3_storynum}}" >{{ story.choice_3_goto}}</a></strong></p>{% endif %}
 {% if story.choice_4_text %}<p>4. {{ story.choice_4_text|safe}} ~ <strong><a href="{{ directoryPath }}{{story.choice_4_storynum}}" >{{ story.choice_4_goto}}</a></strong></p>{% endif %}
