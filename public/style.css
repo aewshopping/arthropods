@@ -43,6 +43,13 @@ header {
   font-size: var(--fluid-16-24);
 }
 
+.responsive-image {
+  display: block;
+  margin: auto;
+  max-width:100%;
+  max-height: 450px;
+}
+
 .flex-columns {
   display: flex;
   flex-direction: row;
