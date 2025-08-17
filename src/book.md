@@ -60,9 +60,7 @@ Dungeon adventure
 <h3 class="text-centre" id={{entry.story_num}}>{{ entry.story_num}}<br>
 {{ entry.title }}<br>
 {{ entry.emoji }}</h3>
-<div class="text-justify">
 <p>{{ entry.content|safe}}</p>
-</div>
 <p class="text-centre">............................................................</p>
 {% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</p>{% endif %}
 {% if entry.choice_2_text %}<p>2. {{ entry.choice_2_text|safe}} ~ <strong>{{ entry.choice_2_goto}}</strong></p>{% endif %}
