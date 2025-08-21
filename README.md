@@ -18,6 +18,9 @@ This repo is used to turn an airtable database into a "choose your own adventure
 6. Copy the sections of the imported Word file into your template book `.docx` document.
 7. Create pdf and make sure that fonts are embedded.
 
+> [!TIP]
+> After writing the above I figured how to import almost everything you need (in terms of layout and style) from the html file. Write up here: https://github.com/aewshopping/repo-blog/blob/main/base/notes/html-to-word.md
+
 ## My gotchas
 
 1. GitHub secrets are scoped either to codespaces or to actions. If you have a secret in one it won't be available in the other! This confused me for a while when trying to access my airtable records.
