@@ -4,15 +4,84 @@
      
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#f4b862ff" />
     
     <title>Arthur Otley and the Order of the Arthropods</title>
     
-    <link rel="stylesheet" type="text/css" href="/public/style_book.css" />
+    <style>
+body {
+  margin: 0pt;
+  font-family: Garamond, Baskerville, serif;
+}
+
+p {font-size:  10pt;
+  text-align: justify;
+  text-indent: 1em;
+  margin: 0px;
+  line-height:130%;
+  }
+
+h1 {text-align: center;
+   font-size: 24pt}
+h2 {text-align: center;
+   font-size: 18pt}
+h3 {text-align: center;
+   font-size: 24pt;
+   page-break-before:always;}
+h4 {text-align: center;
+   font-size: 14pt}
+
+.text-poem p {
+  text-align:left;
+  text-indent:0px;
+  font-style:italic;
+  margin: 1em
+}
+
+.text-contents p {
+  text-align:left;
+  text-indent:0px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.text-bookinfo p {
+  text-align:center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  line-height: 10pt
+}
+
+.text-normal {}
+.text-chapter-heading {}
+.text-dedication {}
+
+ /* Page Definitions */
+ @page
+    {mso-mirror-margins:yes;
+    mso-facing-pages:yes;}
+@page WordSection1
+    {size:5.0in 8.0in;
+    margin:.7in .6in .6in .8in;
+    mso-header-margin:.4in;
+    mso-footer-margin:.3in;}
+@page WordSection2
+    {size:5.0in 8.0in;
+    margin:.7in .6in .6in .8in;
+    mso-header-margin:.4in;
+    mso-footer-margin:.3in;
+    mso-page-numbers:1;}
+div.WordSection1
+    {page:WordSection1;}
+div.WordSection2
+    {page:WordSection2;}
+
+    </style>
+  </head>
+
   </head>
   <body>
-
-    {{ content | safe }}
+  
+      {{ content | safe }}
 
   </body>
 </html>
