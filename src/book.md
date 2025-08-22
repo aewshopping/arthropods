@@ -1,60 +1,7 @@
 ---
-layout: base_book.njk
+layout: base_book_intro.njk
 eleventyExcludeFromCollections: true
 ---
-
-<h1 class="text-centre">ARTHUR OTLEY<br>
-and the<br>
-Order of the Arthropods</h1>
-
-<br>
-
-<h4 class="text-centre">A.E.C. WEBB</h4>
-
-<br>
-
-<h2 class="text-centre">Ant Books</h2>
-
-~pagebreak~
-
-<div class="text-centre">
-ANT BOOKS
-
-Published by Ant Books Ltd  
-A fictional books company, London, England
-
-First published 2025
-
-Copyright Anthony Webb 2025
-All rights reserved
-
-Printed in England by S Johnson, Gough Square, London
-
-This book is sold subject to the condition that it shall not, by way of trade or otherwise, be lent, re-sold, read out loud on the London underground, enchanted with wings or otherwise circulated without the publisher's consent in any form of binding or cover other than that in which it is published and without a similar condition including this condition (even the bit about the wings) being imposed upon the subsequent purchaser, on penalty of being magically transformed into a warty toad for a period of no less than twelve months.
-</div>
-
-~pagebreak~
-
-_<p class="text-centre">For Arthur, just in case it wasn't obvious!</p>_
-
-~pagebreak~
-
-~pagebreak~
-
-<h2 class="text-centre">CONTENTS</h2>
-
-PART ONE  
-Off to magic school
-
-PART TWO  
-Mastering magic
-
-PART THREE  
-Dungeon adventure
-
-~pagebreak~
-
-~pagebreak~
 
 {% for entry in story %}
 <h3 class="text-centre" id={{entry.story_num}}>{{ entry.story_num}}<br>
@@ -70,3 +17,54 @@ Dungeon adventure
 {% if entry.choice_5_text %}<p>5. {{ entry.choice_5_text|safe}} ~ <strong>{{ entry.choice_5_goto}}</strong></p>{% endif %}
 
 {% endfor %}
+
+### List of characters
+
+Arthur Otley - an ordinary boy without a care in the world. He is you: the hero of this story.
+
+Evan Otley - Arthur's younger brother. He wants to go to magic school too.
+
+Daniel Colliers-Wood - a first year in Ravenwing House, his ambition is to combine science and magic and invent teleportation.
+
+Robin Colliers-Wood - Daniel's younger brother. Sometimes he likes bad guys but he has a good heart. 
+
+Robert Bleezeley - a fourth year in Lionpaw House. He is a fan of a good joke and also justice.
+
+Alex Bleezeley - twin brother of Robert. A sportsman, and an expert in jacuzzi.
+
+Aaron Bleezeley - younger brother of Robert and Alex. He's brave but sometimes foolish.
+
+Snako Malboy - a Snakefang House first year. His family have been in Snakefang House for generations. A world champion sneerer.
+
+Kensley Potato - a first year in Hedgehog House, she likes to keep her head down, her feet on the floor and her eyes on her shoes. 
+
+Zebediah Slumblebore - headmaster of Hogsnorts School of Magic. Favourite food is mashed potatoes and watermelon, but not both at the same time. 
+
+Professor Eric Knid - he teaches the care of magical creatures, especially insects which he thinks people don't care about enough.
+
+Professor Comicus Jape - an expert in offensive magic, he also loves a bit of a giggle.
+
+Professor Madam Blavatsky - teaches Defence Against Dark Magic, together with transcendental meditation. 
+
+Professor Adeptus - one of the least important professors at Hogsnorts, he has been head of IT for the last thirty years and he still hasn't been able to get the WiFi working.
+
+Wally - owner of Wally's Wanderful Wand Shop, and part time mind reader. 
+
+Wesley the Weasel - Slumblebore's adopted pet weasel. He used to be a real boy.
+
+Brian Banana, Rebecca Radishbottom, Betty Appleton - students in Hedgehog House.
+
+Azog the Great - king of the spiders.
+
+Percy the Pigeon - a giant pigeon.
+
+### List of Hogsnorts School Houses, their colours and their chants
+
+<br><br>
+Lionpaw House (red and gold) -"South paw, North paw, we score, Lionpaw!" [Shadow boxing]
+<br><br>
+Snakefang House (green and silver) - "Snake House rules, yah, sssssssss" [stick tongue out]
+<br><br>
+Ravenwing House (blue and copper) - "Mind over matter, Ravenwings comin' at yaaaa!" [Flap hands like wings to the side of head]
+<br><br>
+Hedgehog House (brown) - "Hoggers up, hoggers down, hoggers hoggers stand your ground" [stand up, sit down, stand up]
