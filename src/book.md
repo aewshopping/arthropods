@@ -9,12 +9,14 @@ eleventyExcludeFromCollections: true
 {{ entry.emoji }}</h3>
 <p>{{ entry.content|safe}}</p>
 <p class="text-centre">............................................................</p>
-{% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</p>{% endif %}
+<div class="text-choice">
+{% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</strong></p>{% endif %}
 {% if entry.choice_2_text %}<p>2. {{ entry.choice_2_text|safe}} ~ <strong>{{ entry.choice_2_goto}}</strong></p>{% endif %}
 {% if entry.choice_3_text %}<p>3. {{ entry.choice_3_text|safe}} ~ <strong>{{ entry.choice_3_goto}}</strong></p>{% endif %}
 {% if entry.choice_4_text %}<p>4. {{ entry.choice_4_text|safe}} ~ <strong>
 {{ entry.choice_4_goto}}</strong></p>{% endif %}
 {% if entry.choice_5_text %}<p>5. {{ entry.choice_5_text|safe}} ~ <strong>{{ entry.choice_5_goto}}</strong></p>{% endif %}
+</div>
 
 {% endfor %}
 
@@ -60,11 +62,10 @@ Percy the Pigeon - a giant pigeon.
 
 ### List of Hogsnorts School Houses, their colours and their chants
 
-<br><br>
-Lionpaw House (red and gold) -"South paw, North paw, we score, Lionpaw!" [Shadow boxing]
-<br><br>
-Snakefang House (green and silver) - "Snake House rules, yah, sssssssss" [stick tongue out]
-<br><br>
-Ravenwing House (blue and copper) - "Mind over matter, Ravenwings comin' at yaaaa!" [Flap hands like wings to the side of head]
-<br><br>
-Hedgehog House (brown) - "Hoggers up, hoggers down, hoggers hoggers stand your ground" [stand up, sit down, stand up]
+**Lionpaw House** (_red and gold_) -"South paw, North paw, we score, Lionpaw!" [Shadow boxing]<br><br>
+
+**Snakefang House** (_green and silver_) - "Snake House rules, yah, sssssssss" [stick tongue out]<br><br>
+
+**Ravenwing House** (_blue and copper_) - "Mind over matter, Ravenwings comin' at yaaaa!" [Flap hands like wings to the side of head]<br><br>
+
+**Hedgehog House** (_brown_) - "Hoggers up, hoggers down, hoggers hoggers stand your ground" [stand up, sit down, stand up]

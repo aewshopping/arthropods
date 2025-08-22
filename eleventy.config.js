@@ -5,8 +5,10 @@ module.exports = async function(eleventyConfig) {
 	let options = {
 		html: true,
 	};
+
+  let markdownLib = markdownIt(options).use(require("markdown-it-container"), "text-poem");
   
-	eleventyConfig.setLibrary("md", markdownIt(options));
+	eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addPassthroughCopy("public");
 
   const { HtmlBasePlugin } = await import("@11ty/eleventy");
