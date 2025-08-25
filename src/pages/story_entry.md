@@ -61,5 +61,5 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
 </article>
 
 <footer>
-<a href="{{story.record_link}}" target="_blank">airtable record</a> | <a href="{{story.interface_link}}" target="_blank">airtable interface</a>
+<a href="https://www.amazon.co.uk/Arthur-Otley-Arthropods-Someone-Something/dp/B0FMQ4RC59/" target="_blank">Amazon</a> | <a href="{{story.record_link}}" target="_blank">Record</a> | <a href="{{story.interface_link}}" target="_blank">Interface</a>
 </footer>
