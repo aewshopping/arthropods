@@ -8,4 +8,6 @@ This story, like all the best stories, starts with an ordinary boy, not a care i
 
 <a href="{{ page.url}}story/1">Your story begins...</a>
 
+You can also [read the story on paper](https://www.amazon.co.uk/Arthur-Otley-Arthropods-Someone-Something/dp/B0FMQ4RC59/) (published on Amazon).
+
 <img class="responsive-image" src="https://res.cloudinary.com/ds2o5ecdw/image/upload/f_auto,fl_preserve_transparency/v1755515454/other/arthur_cover_drawing_v2_no_bg_ldhdlq.png" alt="Arthur the wizard brandishing his wand">
