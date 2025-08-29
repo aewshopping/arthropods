@@ -78,11 +78,11 @@ Arthur, I am writing this message to help you get through the school and find yo
 
 Your professors will teach you some essential spells to help you overcome the challenges you will face. But you will have to talk to them carefully to make sure that they don't get distracted in their lessons.
 
-- Professor Comicus Jape is an excellent teacher of offensive magic but he can get distracted by telling jokes. If you ignore his jokes, he can teach you a very useful spell to transform your wand into a magic sword that can cut through anything. 
+- Professor Comicus Jape is an excellent teacher of offensive magic but he can get distracted by telling jokes. If you ignore his jokes, he can teach you a very useful spell to **transform your wand into a magic sword** that can cut through anything. 
 
-- Professor Madam Blavatksy knows an extremely useful sleeping spell. However you must be patient and humble. If you show her that you do not pretend to know all the answers, she will help you and teach you her sleeping enchantment. 
+- Professor Madam Blavatksy knows an extremely useful **sleeping spell**. However you must be patient and humble. If you show her that you do not pretend to know all the answers, she will help you and teach you her sleeping enchantment. 
 
-- Professor Eric Knid is a rather peculiar fellow to tell you the truth. But he does know a marvellous flamethrower spell, which I myself have used to roast marshmallows. Just make sure you don't get him started on his favourite topic: why insects are so amazing, otherwise he will forget all about teaching you magic.
+- Professor Eric Knid is a rather peculiar fellow to tell you the truth. But he does know a marvellous **flamethrower spell**, which I myself have used to roast marshmallows. Just make sure you don't get him started on his favourite topic: why insects are so amazing, otherwise he will forget all about teaching you magic.
 
 You can find the dungeon by sneaking off into the school at night time after dinner. Or by creeping off into the school after your lessons, or after you bunk off for the day.
 
