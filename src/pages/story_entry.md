@@ -61,5 +61,5 @@ document.getElementById('numberForm').addEventListener('submit', function(event)
 </article>
 
 <footer>
-<a href="https://www.amazon.co.uk/Arthur-Otley-Arthropods-Someone-Something/dp/B0FMQ4RC59/" target="_blank">Amazon</a> | <a href="{{story.record_link}}" target="_blank">Record</a> | <a href="{{story.interface_link}}" target="_blank">Interface</a>
+<a href="https://www.amazon.co.uk/Arthur-Otley-Arthropods-Someone-Something/dp/B0FMQ4RC59/" target="_blank">Buy on Amazon</a> | <a href="{{story.record_link}}" target="_blank">Record</a> | <a href="{{story.interface_link}}" target="_blank">Interface</a>
 </footer>
