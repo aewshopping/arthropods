@@ -1,9 +1,45 @@
 ---
-layout: base_book_intro.njk
+layout: base_ebook_intro.njk
 eleventyExcludeFromCollections: true
 ---
 
-### List of characters
+# How to read this book
+
+This is a story where __you__ have to choose how your adventure unfolds.
+
+Each chapter has a number and when you have finished the chapter you will have a list of options. Each option shows the number of a chapter you can choose to go to next.
+
+Sometimes there will be lots of options. Sometimes just one.
+
+The options at end of the chapter are not links - you can't click them and go to that chapter.
+
+Instead you have to bring up the list of chapters on your reading device and scroll to the one you need.
+
+Why did I do it this way?
+
+Well for some of the options you need to _figure out_ the number of the chapter. If it was a link you could just click and go without figuring out anything - much less fun!
+
+But also because scrolling through the chapters brings the feel and excitement of turning the pages in a 'real' "choose how your adventure unfolds" book to find the next part of the story. Who knows where you will end up next?
+
+# The story begins...
+
+{% for entry in story %}
+<h2 class="text-centre" id={{entry.story_num}}>{{ entry.story_num}}. <br>
+{{ entry.title }}</h2>
+<p>{{ entry.content|safe}}</p>
+<p class="text-centre">............................................................</p>
+<div class="text-choice">
+{% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</strong></p>{% endif %}
+{% if entry.choice_2_text %}<p>2. {{ entry.choice_2_text|safe}} ~ <strong>{{ entry.choice_2_goto}}</strong></p>{% endif %}
+{% if entry.choice_3_text %}<p>3. {{ entry.choice_3_text|safe}} ~ <strong>{{ entry.choice_3_goto}}</strong></p>{% endif %}
+{% if entry.choice_4_text %}<p>4. {{ entry.choice_4_text|safe}} ~ <strong>
+{{ entry.choice_4_goto}}</strong></p>{% endif %}
+{% if entry.choice_5_text %}<p>5. {{ entry.choice_5_text|safe}} ~ <strong>{{ entry.choice_5_goto}}</strong></p>{% endif %}
+</div>
+
+{% endfor %}
+
+# List of characters
 
 Arthur Otley - an ordinary boy without a care in the world. He is you: the hero of this story.
 
@@ -43,7 +79,7 @@ Azog the Great - king of the spiders.
 
 Percy the Pigeon - a giant pigeon.
 
-### List of Hogsnorts School Houses, their colours and their chants
+# List of Hogsnorts School Houses, their colours and their chants
 
 **Lionpaw House** (_red and gold_) -"South paw, North paw, we score, Lionpaw!" [Shadow boxing]<br><br>
 
@@ -53,7 +89,7 @@ Percy the Pigeon - a giant pigeon.
 
 **Hedgehog House** (_brown_) - "Hoggers up, hoggers down, hoggers hoggers stand your ground" [stand up, sit down, stand up]
 
-### Headmaster Professor Slumblebore's hints on exploring Hogsnorts and investigating the dungeons
+# Headmaster Professor Slumblebore's hints on exploring Hogsnorts and investigating the dungeons
 
 Quillus startus. Hello? Hello? Is this working? I'm recording my voice onto paper using magic: with my own spell in fact, which I'm rather proud of. 
 
@@ -77,18 +113,3 @@ Whatever choices you make you will never be in a situation you cannot get out of
 
 That is all I wanted to tell you Arthur - good luck! Quill stop. Magicus stoppus. Stop writing. Just stop it! Why isn't this thing stopping? Ah I remember now: quillus stoppus.
 
-{% for entry in story %}
-<h2 class="text-centre" id={{entry.story_num}}>{{ entry.story_num}}<br>
-{{ entry.title }}</h2>
-<p>{{ entry.content|safe}}</p>
-<p class="text-centre">............................................................</p>
-<div class="text-choice">
-{% if entry.choice_1_text %}<p>1. {{ entry.choice_1_text|safe}} ~ <strong>{{ entry.choice_1_goto}}</strong></p>{% endif %}
-{% if entry.choice_2_text %}<p>2. {{ entry.choice_2_text|safe}} ~ <strong>{{ entry.choice_2_goto}}</strong></p>{% endif %}
-{% if entry.choice_3_text %}<p>3. {{ entry.choice_3_text|safe}} ~ <strong>{{ entry.choice_3_goto}}</strong></p>{% endif %}
-{% if entry.choice_4_text %}<p>4. {{ entry.choice_4_text|safe}} ~ <strong>
-{{ entry.choice_4_goto}}</strong></p>{% endif %}
-{% if entry.choice_5_text %}<p>5. {{ entry.choice_5_text|safe}} ~ <strong>{{ entry.choice_5_goto}}</strong></p>{% endif %}
-</div>
-
-{% endfor %}
